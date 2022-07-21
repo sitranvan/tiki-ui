@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overrides/Bar/Global-Navigation/01-Header/01-Element/06-Seller-Center"
+            transform="translate(-8.000000, -5.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Icon" transform="translate(8.000000, 5.000000)">
+                <path
+                    d="M10.425,0.375 C10.275,0.15 10.05,0 9.75,0 L2.25,0 C1.95,0 1.725,0.15 1.575,0.375 C0,3.375 0,3.525 0,3.75 C0,4.575 0.675,5.25 1.5,5.25 L1.5,11.25 C1.5,11.7 1.8,12 2.25,12 L9.75,12 C10.2,12 10.5,11.7 10.5,11.25 L10.5,5.25 C11.325,5.25 12,4.575 12,3.75 C12,3.525 12,3.375 10.425,0.375 Z M7.5,10.5 L7.5,7.5 L4.5,7.5 L4.5,10.5 L3,10.5 L3,5.025 C3.225,5.175 3.45,5.25 3.75,5.25 C4.2,5.25 4.575,5.025 4.875,4.725 C5.175,5.025 5.55,5.25 6,5.25 C6.45,5.25 6.825,5.025 7.125,4.725 C7.425,5.025 7.8,5.25 8.25,5.25 C8.55,5.25 8.775,5.175 9,5.025 L9,10.5 L7.5,10.5 Z"
+                    id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

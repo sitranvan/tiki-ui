@@ -1,0 +1,425 @@
+.form {
+    width: 800px;
+    position: fixed;
+    height: var(--height-form);
+    background-color: var(--white-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+
+    &-close {
+        width: 42px;
+        height: 42px;
+        object-fit: cover;
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        cursor: pointer;
+    }
+
+
+    &-left {
+        width: 500px;
+        height: 100%;
+        padding: 40px 45px 24px;
+        background: var(--white-color);
+        border-radius: 20px 0px 0px 20px;
+
+        &--email {
+            padding: 35px 45px 24px;
+
+        }
+    }
+
+    &-heading {
+        margin-bottom: 20px;
+    }
+
+    &-title {
+        font-size: 2.4rem;
+        font-weight: 500;
+        color: var(--primary-text);
+        margin-bottom: 10px;
+    }
+
+    &-desc {
+        font-size: 1.5rem;
+        color: var(--primary-text);
+    }
+
+    &-input {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        &.active {
+            &::before {
+                border-color: #0d5cb6;
+            }
+        }
+
+        & input {
+            width: 100%;
+            padding: 10px 0px;
+            border: none;
+            font-size: 24px;
+            color: var(--primary-text);
+            outline: none;
+        }
+    }
+
+    &-submit {
+        display: block;
+        margin-top: 30px;
+        outline: none;
+        border-radius: 4px;
+        background: var(--sale-color);
+        padding: 13px 0px;
+        width: 100%;
+        color: var(--white-color);
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        text-align: center;
+
+        &--email {
+            padding: 10px 0;
+        }
+    }
+
+    &-switch {
+        font-size: 1.4rem;
+        margin-top: 20px;
+        text-align: center;
+        color: var(--btn-search-color);
+        cursor: pointer;
+    }
+
+    &-other {
+        margin: 80px 0 15px;
+        text-align: center;
+        position: relative;
+
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: #f2f2f2;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+
+        }
+
+        & span {
+            position: relative;
+            font-size: 1.5rem;
+            color: var(--second-text);
+            display: inline-block;
+            padding: 0 15px;
+            background-color: var(--white-color);
+        }
+    }
+
+    &-social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        cursor: pointer;
+
+        &__icon {
+            width: 58px;
+            height: 58px;
+            object-fit: cover;
+            margin: 0 10px;
+
+            &--mobile-tablet {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+
+    &-rule {
+        margin-bottom: 10px;
+        text-align: center;
+        color: var(--second-text);
+        font-size: 1.1rem;
+
+        &--mobile-tablet {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.4rem;
+        }
+
+        & a {
+            color: var(--btn-search-color);
+        }
+    }
+
+    &-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        background: linear-gradient(136deg, rgb(240, 248, 255) -1%, rgb(219, 238, 255) 85%);
+        height: 100%;
+        border-radius: 0px 20px 20px 0px;
+    }
+
+    &-poster {
+        width: 203px;
+        height: 203px;
+        object-fit: cover;
+    }
+
+    &-wrap {
+        color: var(--primary-color);
+        font-weight: 500;
+        margin-top: 30px;
+
+        & h4 {
+            font-size: 1.7rem;
+            margin-bottom: 5px;
+        }
+
+        & span {
+            font-size: 1.3rem;
+
+        }
+    }
+}
+
+.form-email {
+    position: fixed;
+    width: 800px;
+    height: 420px;
+    z-index: 9999999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+
+    &__back {
+        width: 21px;
+        height: 21px;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    &__title {
+        margin: 20px 0;
+        color: var(--primary-text);
+
+        & h4 {
+            margin-bottom: 10px;
+            font-size: 2.4rem;
+            font-weight: 500;
+        }
+
+        & span {
+            font-size: 1.5rem;
+            user-select: none;
+        }
+    }
+
+    &__password {
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        color: var(--primary-color);
+
+        & span {
+            user-select: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            cursor: pointer;
+        }
+    }
+
+    &__email,
+    &__password {
+        position: relative;
+        margin-bottom: 15px;
+
+
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        &.active {
+            &::before {
+                border-color: #0d5cb6;
+            }
+        }
+
+        & input {
+            width: 100%;
+            padding: 10px 0px;
+            border: none;
+            font-size: 14px;
+            color: rgb(36, 36, 36);
+            outline: none;
+        }
+    }
+
+    &__support {
+        margin-top: 30px;
+        font-size: 1.2rem;
+
+        & a {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        & p {
+            color: var(--second-text);
+            line-height: 1.6;
+
+            & a {
+                color: var(--primary-color);
+                margin-left: 5px;
+            }
+        }
+    }
+
+}
+
+.form--login {
+    display: none;
+    z-index: 999999999999;
+
+    &.show-on {
+        display: flex;
+    }
+}
+
+.form--register {
+    display: none;
+    z-index: 999999999999;
+
+    &.show-on {
+        display: flex;
+    }
+}
+
+.form-email {
+    display: none;
+    z-index: 999999999999;
+
+
+    &.show-on {
+        display: flex;
+    }
+}
+
+.form-mobile-tablet {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--white-color);
+    z-index: 99999999999;
+    display: none;
+
+    &.show-on {
+        display: block;
+    }
+
+    &__img {
+        position: relative;
+
+        & img {
+            object-fit: contain;
+        }
+    }
+
+    &__back {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        cursor: pointer;
+    }
+
+    &__content {
+        padding: 16px 16px 0;
+
+        & h4 {
+            font-size: 2.4rem;
+            font-weight: 500;
+            color: var(--primary-text);
+            margin-bottom: 10px;
+        }
+
+        & h5 {
+            font-size: 1.4rem;
+            color: var(--primary-text);
+
+        }
+    }
+
+    &__wrapper {
+        padding: 16px;
+    }
+
+    &__input {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        &.active {
+            &::before {
+                border-color: #0d5cb6;
+            }
+        }
+
+        & input {
+            width: 100%;
+            padding: 10px 0px;
+            border: none;
+            font-size: 2.4rem;
+            color: var(--primary-text);
+            outline: none;
+        }
+    }
+
+    &__switch {
+        display: block;
+        text-align: center;
+        font-size: 1.4rem;
+        color: var(--primary-color);
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,30 @@
+:root {
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --primary-color: #1a94ff;
+    --btn-search-color: #0d5cb6;
+    --amount-color: #fdd835;
+    --primary-text: #242424;
+    --second-text: #787878;
+    --seller-color: rgba(255, 255, 255, 0.25);
+    --category-color: rgb(56, 56, 61);
+    --sale-color-opacity: rgb(255, 170, 175);
+    --sale-color: #FF424E;
+    --width-logo: 60px;
+    --square-next-icon: 36px;
+    --width-ship: 83px;
+    --distance-right-logo-input: 150px;
+    --distance-right-ship-input: calc(var(--distance-right-logo-input) - calc(var(--width-ship) - var(--width-logo)));
+    --header-search-btn: 120px;
+    --height-header: 100px;
+    --height-header-hide-on: 56px;
+    --height-slider-auto-icon: 56px;
+    --height-slider-auto: 274px;
+    --width-discount-left: 745px;
+    --height-navigation: 50px;
+    --height-form: 510px;
+    --width-wrapper: 1240px;
+    --star-none: rgb(199, 199, 199);
+    --footer-title: #38383d;
+    --footer-text: rgb(128, 128, 137);
+}

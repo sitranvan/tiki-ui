@@ -1,0 +1,123 @@
+.service {
+    position: relative;
+
+    &--mobile-tablet {
+        background-color: var(--white-color);
+
+        height: auto;
+        width: 100vw;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 20px;
+            background-color: var(--white-color);
+            bottom: 100%;
+            border-radius: 30px 30px 0 0;
+            box-shadow: rgba(0, 0, 0, 0.01) 0px 2px 4px 0px;
+
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            left: 0;
+            height: 8px;
+            background-color: #F5F5FA;
+            z-index: 1;
+
+        }
+
+    }
+
+    &--pc {
+        margin-top: 16px;
+
+    }
+
+
+    &-wrapper {
+        display: flex;
+        align-items: center;
+        align-items: flex-start;
+        overflow-x: auto;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &--pc {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            justify-content: space-between;
+            width: 100%;
+            background-color: var(--white-color);
+            border-radius: 4px;
+        }
+    }
+
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 0;
+        height: auto;
+        cursor: pointer;
+
+        &--mobile-tablet {
+            padding: 8px;
+            width: 22vw;
+            height: 96px;
+            margin-top: 5px;
+        }
+
+        &--pc {
+            -webkit-box-align: center;
+            flex-basis: 103px;
+
+        }
+
+        &__img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+
+            &--pc {
+                width: 48px;
+                height: 48px;
+            }
+        }
+
+        &__title {
+            text-align: center;
+            display: block;
+            font-size: 1.2rem;
+            line-height: 1.4;
+            color: var(--primary-text);
+            margin: 8px 0px 0px;
+            width: 100%;
+            word-wrap: wrap;
+            text-align: center;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            &--pc {
+                line-height: 2;
+                margin-top: 12px;
+                font-size: 1.3rem;
+                line-height: 2rem;
+                width: 80px;
+
+            }
+        }
+    }
+
+
+}

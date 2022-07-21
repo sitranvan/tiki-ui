@@ -1,0 +1,188 @@
+.footer {
+    background-color: var(--white-color);
+    height: auto;
+    width: 100%;
+
+    &-wrapper {
+        display: flex;
+        align-items: center;
+        align-items: flex-start;
+        margin-top: 16px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    &-content {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__title {
+            font-size: 1.6rem;
+            line-height: 2.4;
+            font-weight: 500;
+            color: var(--footer-title);
+            margin-bottom: 10px;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__text {
+            display: block;
+            font-size: 1.2rem;
+            color: var(--footer-text);
+            margin-bottom: 8px;
+
+            &--phone {
+                color: var(--footer-title);
+                font-weight: 500;
+
+                &:hover {
+                    text-decoration: underline;
+
+                }
+            }
+
+            &--email {
+                color: var(--footer-text);
+                font-weight: 400;
+
+                &:hover {
+                    text-decoration: underline;
+
+                }
+            }
+        }
+
+        &__link {
+            display: block;
+            font-size: 1.2rem;
+            color: var(--footer-text);
+            margin-bottom: 8px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            & span {
+                font-weight: 500;
+                color: var(--footer-title);
+            }
+        }
+
+        &__certification {
+            display: flex;
+            flex-direction: column;
+
+            &__title {
+                font-size: 1.6rem;
+                color: var(--footer-title);
+                font-weight: 500;
+                margin: 24px 0 12px;
+            }
+
+            &__list {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            & img {
+                height: 32px;
+                object-fit: cover;
+
+                &:first-child {
+                    width: 32px;
+                }
+
+                &:last-child {
+                    width: 83px;
+                }
+            }
+        }
+
+        &__pay {
+            display: flex;
+            width: 226px;
+            flex-wrap: wrap;
+
+            &__img {
+                display: inline-block;
+                margin-right: 8px;
+                margin-bottom: 8px;
+                width: 32px;
+                height: 32px;
+                flex-shrink: 0;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        &__social {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            & img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+
+        &__down {
+            margin-top: 30px;
+
+            &__title {
+                font-size: 1.6rem;
+                font-weight: 500;
+                margin-bottom: 12px;
+            }
+
+
+        }
+
+        &__how {
+            display: flex;
+            height: 100%;
+            gap: 8px;
+
+            &__qr {
+                width: 80px;
+                height: 80px;
+                object-fit: cover;
+            }
+
+            &__wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                & img {
+                    width: 122px;
+                    height: 36px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    &-brand {
+        padding: 16px 0;
+        border-top: 1px solid #ebebf0;
+        border-bottom: 1px solid #ebebf0;
+
+        &__text {
+            font-size: 1.2rem;
+            color: var(--footer-text);
+            margin-bottom: 8px;
+        }
+    }
+
+}

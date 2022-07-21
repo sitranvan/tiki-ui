@@ -1,0 +1,125 @@
+.slider {
+
+    background-color: var(--content-background);
+    margin-top: 15px;
+
+    &-content {
+        display: flex;
+        height: var(--height-slider-auto);
+        max-height: 100%;
+        gap: 8px;
+    }
+
+    &-auto {
+
+        position: relative;
+        width: 824px;
+
+
+    }
+
+    &-icon {
+        position: absolute;
+        top: 0;
+        width: 32px;
+        height: var(--height-slider-auto-icon);
+        object-fit: cover;
+        z-index: 999;
+        opacity: 0.5;
+        transition: all ease-in-out 0.125s;
+        cursor: pointer;
+
+
+    }
+
+    &-next {
+        top: calc(50% - calc(var(--height-slider-auto-icon) / 2));
+        right: 0;
+    }
+
+    &-prev {
+        top: calc(50% - calc(var(--height-slider-auto-icon) / 2));
+        transform: rotate(180deg);
+
+    }
+
+    &-dot {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: calc(var(--height-slider-auto) - 20px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        z-index: 10;
+
+        &__item {
+            margin: 0 2px;
+            width: 8px;
+            height: 8px;
+            border-radius: 100rem;
+            background-color: rgba(#fafafa, 0.6);
+            cursor: pointer;
+            transition: background-color 0.25s linear;
+
+            &.active {
+                background-color: var(--white-color);
+            }
+        }
+    }
+
+    &-wrapper {
+        width: 100%;
+        height: 274px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    &-main {
+        display: flex;
+        position: relative;
+        /* transition: transform 0.6s linear; */
+        height: 100%;
+    }
+
+    &-item {
+        height: 100%;
+        min-width: 100%;
+        flex: 1 0 100%;
+        user-select: none;
+        width: 824px;
+
+        & img {
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 100%;
+            border-radius: 4px;
+            height: 100%;
+
+        }
+    }
+
+
+    &-img {
+
+        flex: auto;
+        border-radius: 4px;
+
+        & img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    }
+
+
+
+
+
+
+
+}

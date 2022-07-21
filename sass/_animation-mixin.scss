@@ -1,0 +1,36 @@
+// Mobile and Tablet
+@mixin device-pc {
+    @media (min-width:1024px) {
+        @content;
+    }
+}
+
+@mixin device-mobile-tablet {
+    @media (max-width: 1023px) {
+        @content;
+    }
+}
+
+// Tablet
+@mixin devive-tablet {
+    @media (min-width: 740px) and (max-width:1023px) {
+        @content;
+    }
+}
+
+// Mobile
+@mixin device-mobile {
+    @media (max-width:739px) {
+        @content;
+    }
+}
+
+@keyframes showOn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

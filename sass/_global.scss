@@ -1,0 +1,52 @@
+body {
+    height: 3000px;
+
+    background-color: #F5F5FA;
+    position: relative;
+
+
+}
+
+.wrapper {
+    width: 1270px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.overlay-full {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(black, 0.4);
+    z-index: 999999999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear 0.2s;
+
+    &.show-on {
+        opacity: 1;
+        visibility: visible;
+
+    }
+}
+
+
+.overlay-not-header {
+    position: absolute;
+    top: var(--height-header);
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: rgba(black, 0.4);
+    display: none;
+    z-index: 99999999;
+
+    &.show-on {
+        display: block;
+
+    }
+}
