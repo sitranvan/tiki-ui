@@ -50,3 +50,19 @@ body {
 
     }
 }
+
+.details {
+    display: none;
+
+    &.show {
+        display: block;
+    }
+}
+
+.main {
+    display: block;
+
+    &.hidden {
+        display: none;
+    }
+}

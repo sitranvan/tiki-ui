@@ -69,6 +69,12 @@
             }
         }
 
+        &.error {
+            &::before {
+                border-color: #D93444;
+            }
+        }
+
         & input {
             width: 100%;
             padding: 10px 0px;
@@ -277,6 +283,13 @@
             }
         }
 
+        &.error {
+
+            &::before {
+                border-color: #DC3545;
+            }
+        }
+
         & input {
             width: 100%;
             padding: 10px 0px;
@@ -402,6 +415,13 @@
         &.active {
             &::before {
                 border-color: #0d5cb6;
+            }
+        }
+
+        &.error {
+
+            &::before {
+                border-color: #DC3545;
             }
         }
 
